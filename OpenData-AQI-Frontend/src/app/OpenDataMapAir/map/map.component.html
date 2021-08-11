@@ -1,0 +1,17 @@
+<div class="map-container">
+    <div class="map-frame">
+        <div id="map"></div>
+    </div>
+</div>
+
+<div class="OpenData-container">
+    <div class="OpenData-frame">
+        <div id="OpenData">
+
+            <div *ngFor="let Data of openDataAQI.records; trackBy: trackByIndex">
+                <app-card-detail [opendata]="Data"></app-card-detail>
+            </div>
+            
+        </div>
+    </div>
+</div>
